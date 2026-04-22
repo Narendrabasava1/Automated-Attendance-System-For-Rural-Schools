@@ -1,0 +1,107 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #d9e4f5);
+    height: 100vh;
+}
+
+/* Center Container (Login/Register) */
+.container {
+    width: 350px;
+    margin: 100px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.02);
+}
+
+/* Dashboard Layout */
+.dashboard {
+    text-align: center;
+    margin-top: 120px;
+}
+
+/* Dashboard Buttons */
+.btn {
+    width: 260px;
+    margin: 12px;
+    padding: 14px;
+    font-size: 16px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Message text */
+p {
+    margin-top: 15px;
+    color: green;
+}
+
+/* Responsive (Mobile Friendly) */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        margin: 60px auto;
+    }
+
+    .btn {
+        width: 90%;
+    }
+}

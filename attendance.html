@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Attendance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="dashboard">
+    <h2>Live Attendance - {{ subject }}</h2>
+
+    <!-- LIVE CAMERA -->
+    <img src="{{ url_for('video_feed', subject=subject) }}" width="700">
+
+    <br><br>
+    <a href="/">Back to Dashboard</a>
+</div>
+
+</body>
+</html>

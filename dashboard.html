@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body style="margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center;">
+
+    <div style="text-align: center;">
+
+        <h2>Welcome Attendance will be Taken for the subject- {{ subject }}</h2>
+
+        <!-- Start Attendance -->
+        <form action="/start_attendance" method="POST">
+            <input type="hidden" name="subject" value="{{ subject }}">
+            <button type="submit">Start Attendance</button>
+        </form>
+
+        <br>
+
+        <!-- Register New Face -->
+        <a href="/register">
+            <button>Register New Face</button>
+        </a>
+
+    </div>
+
+</body>
+</html>
